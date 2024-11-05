@@ -66,10 +66,10 @@ namespace JsonDemo1_1735
                 }
             };
 
-            // 將公司物件序列化為 JSON 字串
+            // JsonConvert.SerializeObject：將物件序列化為JSON格式的字串。
+            // Formatting.Indented參數讓輸出的JSON更具可讀性（縮排格式）。
             string jsonString = JsonConvert.SerializeObject(index, Formatting.Indented);
 
-            // 輸出 JSON 字串
             Console.WriteLine(jsonString);
         }
     }
